@@ -1,0 +1,50 @@
+.choice-wrapper {
+  position: relative;
+}
+
+.choice-input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.choice-input:checked + .choice-label {
+  box-shadow: 0 0 0 3px var(--bg-primary), 0 0 0 5px var(--choice-selected-ring);
+}
+
+.choice-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--btn-border);
+  background-color: var(--btn-bg);
+  height: 40px;
+  padding: 0 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.1s ease;
+}
+
+.choice-label:hover {
+  background-color: var(--btn-bg-hovered);
+}
+
+.choice-label.choice-right-answer {
+  color: white;
+  background-color: var(--color-right-answer);
+  border-color: var(--color-right-answer);
+}
+.choice-label.choice-wrong-answer {
+  color: white;
+  background-color: var(--color-wrong-answer);
+  border-color: var(--color-wrong-answer);
+}
+
+@media screen and (max-width: 580px) {
+  .choice-label {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}

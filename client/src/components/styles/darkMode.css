@@ -1,0 +1,30 @@
+.dark-mode-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.1s ease;
+}
+
+.dark-mode-btn:hover {
+  opacity: 0.7;
+}
+
+.color-mode-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-path-outer {
+  fill: var(--color-primary);
+}
+
+.light-icon-path {
+  stroke: var(--color-primary);
+}

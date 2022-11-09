@@ -1,0 +1,73 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--color-primary);
+}
+
+body {
+  margin: 0;
+  font-family: "inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  --bg-primary: #27272a;
+  --color-primary: #e2e8f0;
+
+  --choice-selected-ring: #5eead4;
+
+  --btn-bg: #3f3f4699;
+  --btn-border: #3f3f4699;
+  --btn-bg-hovered: #27272a;
+
+  --progress-outer-color: #3f3f4699;
+  --progress-inner-color: #5eead4;
+
+  --devtools-gradient-1: #0f766e;
+  --devtools-gradient-2: #2dd4bf;
+
+  --color-right-answer: #22c55e;
+  --color-wrong-answer: #ef4444;
+
+  color-scheme: dark;
+}
+
+body.light {
+  --bg-primary: #fff;
+  --color-primary: #334155;
+
+  --choice-selected-ring: #334155;
+
+  --btn-bg: #fff;
+  --btn-border: #e3e3e3;
+  --btn-bg-hovered: #e3e3e355;
+
+  --progress-outer-color: #e3e3e3;
+  --progress-inner-color: #334155;
+
+  --devtools-gradient-1: #334155;
+  --devtools-gradient-2: #64748b;
+
+  --color-right-answer: #16a34a;
+  --color-wrong-answer: #dc2626;
+  color-scheme: light;
+}
+
+#root {
+  display: flex;
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}

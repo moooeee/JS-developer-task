@@ -1,0 +1,37 @@
+.activity-results {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.rank {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.rank-desc {
+  margin-bottom: 20px;
+}
+
+.high-score-msg {
+  margin-bottom: 80px;
+}
+
+.try-again-button {
+  align-items: center;
+  border: 1px solid #e3e3e3;
+  padding: 20px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: none;
+  font-size: 20px;
+  text-align: center;
+  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+  transition: background-color 0.2s ease;
+  margin-bottom: 50px;
+}
+
+.try-again-button:hover {
+  background-color: #e3e3e322;
+}
